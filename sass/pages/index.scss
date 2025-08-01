@@ -1,0 +1,31 @@
+.header {
+
+    &__logo {
+
+        display: flex;
+        justify-content: center;
+        padding: 15px 0px;
+
+    }
+
+    &__logo-image {
+
+        height: 36px;
+
+    }
+
+    &__location {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0px;
+        gap: 15px;
+        background-color: $grey2;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3),
+                    0 -2px 3px rgba(0, 0, 0, 0.25);
+
+
+    }
+
+}

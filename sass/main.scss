@@ -1,0 +1,22 @@
+/* Variables */
+
+@import "variables/couleurs";
+@import "variables/polices";
+
+/* Pages */
+
+@import "pages/index.scss";
+
+/* Général */
+
+* , body {
+
+    margin: 0px;
+
+}
+
+* {
+
+    font-family: $roboto;
+
+}
