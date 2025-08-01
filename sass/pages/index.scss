@@ -29,3 +29,36 @@
     }
 
 }
+
+.hero {
+
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $lightgrey;
+
+    &__title {
+
+        @extend %section_title;
+        text-align: center;
+        margin-bottom: 15px;
+
+    }
+
+    &__subtitle {
+
+        @extend %paragraph;
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+
+    &__button {
+
+        @extend %button_cta;
+
+    }
+
+}

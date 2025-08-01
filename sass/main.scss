@@ -7,6 +7,11 @@
 
 @import "pages/index.scss";
 
+/* Composants */
+
+@import "composants/typographies.scss";
+@import "composants/boutons.scss";
+
 /* Général */
 
 * , body {
