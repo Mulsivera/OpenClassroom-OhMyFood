@@ -1,0 +1,51 @@
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: $grey;
+    padding: 22px 20px;
+
+    &__logo {
+
+        p {
+
+            color: $white;
+            font-size: 18px;
+            font-family: $shrikhand;
+
+        }
+
+    }
+
+    &__links {
+
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        a {
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: $white;
+            text-decoration: none;
+
+            &:nth-child(-n+2) {
+
+                font-weight: 600;
+
+            }
+
+            i {
+
+                width: 20px;
+
+            }
+
+        }
+
+    }
+
+}
