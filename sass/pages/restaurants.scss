@@ -1,0 +1,63 @@
+.secondaryheader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 25px 20px 15px 25px;
+
+    &__logo {
+        width: 200px;
+        height: 36px;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 275px;
+    overflow: hidden;
+}
+
+.menu {
+    padding: 40px 20px;
+    background-color: $lightgrey;
+    border-radius: 40px;
+    margin-top: -40px;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 28px;
+            font-family: $shrikhand;
+            font-weight: 500;
+        }
+
+        i {
+            color: black;
+            margin-right: 20px;
+        }
+    }
+
+    .menu-section {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        &__title {
+            @extend %menu_title;
+        }
+    }
+
+    button {
+        @extend %button_cta;
+        width: 186px;
+        margin: 0 auto;
+    }
+}

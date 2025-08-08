@@ -1,17 +1,28 @@
 /* Titres */
 
 %section_title {
-
   font-size: 24px;
   font-weight: 700;
-
 }
 
 /* Textes */
 
 %paragraph {
-
     font-size: 18px;
     font-weight: 300;
+}
 
+/* Titre de section de menu */
+
+%menu_title {
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+    span {
+        width: 40px;
+        border-bottom: 3px solid $green;
+    }
 }

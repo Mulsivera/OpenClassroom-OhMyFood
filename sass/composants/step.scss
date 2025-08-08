@@ -1,0 +1,52 @@
+.step {
+    height: 72px;
+    position: relative;
+
+    @media (min-width: 1399.9px) {
+        width: 33%;
+    }
+
+    &:nth-child(3) {
+        .step__infos {
+
+            i {
+                color: $primary;
+            }
+        }
+    }
+
+    &__number {
+        position: absolute;
+        top: 18px;
+        left: 0px;
+        z-index: 10;
+        background-color: $primary;
+        color: $white;
+        padding: 5px 10px;
+        border-radius: 50px;
+    }
+
+    &__infos {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 25px 0;
+        gap: 25px;
+        background-color: $background;
+        margin-left: 15px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+
+        i {
+            margin-left: 45px;
+            width: 16px;
+            color: #7E7E7E;
+
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}

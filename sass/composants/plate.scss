@@ -1,0 +1,27 @@
+.plate {
+    background-color: $white;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__text {
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+
+    &__price {
+        p {
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+}
