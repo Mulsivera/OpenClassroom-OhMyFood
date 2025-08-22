@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Ohmyfood - Réservez le menu qui vous convient</title>
 </head>
+
 <body>
+        <div class="loader">
+        <div class="spinner"></div>
+    </div>
     <!--Header-->
     <header class="main-header">
         <div class="main-header__logo">
@@ -56,17 +61,24 @@
         <h2 class="restaurants__title">Restaurants</h2>
         <div class="restaurants__cards">
             <div class="card">
-                <div class="card__image">
-                    <img src="./restaurants/restaurant_1/img/img_1.jpg" alt="Photo du restaurant la palette du goût">
-                    <p>Nouveau</p>
-                </div>
-                <div class="card__infos">
-                    <div>
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
+                <a href="./restaurants/restaurant_1/index.html" class="card__link">
+                    <div class="card__image">
+                        <img src="./restaurants/restaurant_1/img/img_1.jpg"
+                            alt="Photo du restaurant la palette du goût">
+                        <p>Nouveau</p>
                     </div>
-                    <div><i class="fa-regular fa-heart fa-xl"></i></div>
-                </div>
+                    <div class="card__infos">
+                        <div>
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                    </div>
+                </a>
+                <label class="heart-toggle">
+                    <input type="checkbox">
+                    <i class="fa-regular fa-heart fa-xl heart-empty"></i>
+                    <i class="fa-solid fa-heart fa-xl heart-full"></i>
+                </label>
             </div>
             <div class="card">
                 <div class="card__image">
@@ -78,7 +90,11 @@
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
                     </div>
-                    <div><i class="fa-regular fa-heart fa-xl"></i></div>
+                    <label class="heart-toggle">
+                        <input type="checkbox">
+                        <i class="fa-regular fa-heart fa-xl heart-empty"></i>
+                        <i class="fa-solid fa-heart fa-xl heart-full"></i>
+                    </label>
                 </div>
             </div>
             <div class="card">
@@ -91,7 +107,11 @@
                         <h3>A la française</h3>
                         <p>Cité Rouge</p>
                     </div>
-                    <div><i class="fa-regular fa-heart fa-xl"></i></div>
+                    <label class="heart-toggle">
+                        <input type="checkbox">
+                        <i class="fa-regular fa-heart fa-xl heart-empty"></i>
+                        <i class="fa-solid fa-heart fa-xl heart-full"></i>
+                    </label>
                 </div>
             </div>
             <div class="card">
@@ -104,7 +124,11 @@
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricoiurt</p>
                     </div>
-                    <div><i class="fa-regular fa-heart fa-xl"></i></div>
+                    <label class="heart-toggle">
+                        <input type="checkbox">
+                        <i class="fa-regular fa-heart fa-xl heart-empty"></i>
+                        <i class="fa-solid fa-heart fa-xl heart-full"></i>
+                    </label>
                 </div>
             </div>
         </div>
@@ -122,4 +146,5 @@
         </div>
     </footer>
 </body>
+
 </html>

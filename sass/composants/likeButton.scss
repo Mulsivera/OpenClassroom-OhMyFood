@@ -1,0 +1,51 @@
+.card {
+    .heart-toggle {
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+    }
+}
+
+.heart-toggle {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    input {
+        display: none;
+    }
+
+    i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.3s ease;
+    }
+
+    .heart-empty {
+        opacity: 1;
+        color: black;
+    }
+
+    .heart-full {
+        opacity: 0;
+        background: linear-gradient($primary, $pink);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    input:checked~.heart-empty {
+        opacity: 0;
+    }
+
+    input:checked~.heart-full {
+        opacity: 1;
+    }
+}
