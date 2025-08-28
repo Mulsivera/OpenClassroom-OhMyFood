@@ -16,15 +16,24 @@
     }
 
     &__text {
+
         h3 {
             font-size: 18px;
             font-weight: 600;
             margin-bottom: 2px;
+            max-width: 230px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         p {
             font-size: 14px;
             font-weight: 300;
+            max-width: 230px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 
@@ -45,10 +54,18 @@
         align-items: center;
         opacity: 0;
         transition: width 0.3s ease, opacity 0.3s ease;
+
+        i {
+            transition: transform 0.5s ease;
+        }
     }
 
     &:hover &__check {
         width: 60px;
         opacity: 1;
+
+        i {
+            transform: rotate(360deg);
+        }
     }
 }
